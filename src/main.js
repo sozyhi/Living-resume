@@ -53,8 +53,21 @@ let string = `
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
 }
 /* 一幅太极八卦图就完成了
- * 下次再见哦
-*/
+ * 接下来，我们让太极动起来
+ */
+ #div1{
+   animation:spin 3s linear infinite;
+ }
+ @keyframes spin{
+   from{
+     transform:rotate(0);
+   }
+   to{
+    transform:rotate(360deg);
+  }
+ }
+ /* 下次再见哦 */
+
 `;
 let string2 = "";
 let n = 0;
