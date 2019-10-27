@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Living-resume</title>
   </head>
   <body>
-    <style id="style"></style>
-    <div id="htmlWrapper"><div id="html"></div></div>
-
-    <div id="div1Wrapper">
-      <div id="div1"></div>
-    </div>
-
-    <style>* {
+    <style id="style">
+      * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
       }
-      *::after,
-      ::before {
+      *,
+      :after,
+      :before {
         box-sizing: border-box;
       }
       #html {
         word-break: break-all;
-        width: 50%;
       }
-      #div1Wrapper {
+      #div1Wrapper,
+      #html {
         width: 50%;
       }
       #div1 {
@@ -36,12 +33,8 @@
         transform: translateX(-50%);
         top: 25%;
       }
-      #div1::before {
-        content: "";
-        display: block;
-        position: absolute;
-      }
-      #div1::after {
+      #div1:after,
+      #div1:before {
         content: "";
         display: block;
         position: absolute;
@@ -54,15 +47,19 @@
         }
         #div1Wrapper {
           height: 50vh;
+        }
+        #div1,
+        #div1Wrapper {
           position: relative;
           top: 25%;
         }
         #div1 {
-          position: relative;
-          top: 25%;
           transform: translateX(-25%);
         }
-      }</style>
-    <script src="/main.1f19ae8e.js"></script>
+      }
+    </style>
+    <div id="htmlWrapper"><div id="html"></div></div>
+    <div id="div1Wrapper"><div id="div1"></div></div>
+    <script src="dist/main.c9efe402.js"></script>
   </body>
 </html>
